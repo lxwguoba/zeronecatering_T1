@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/foodlayout_bg"
+            android:orientation="vertical">
+            <!--这个是订单的标题-->
+            <!--商品列表头部-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="菜品"
+                    android:textColor="#aba7a6"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="数量"
+                    android:textColor="#aba7a6"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:text="金额"
+                    android:textColor="#aba7a6"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <!--虚线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/xu_line"
+                android:layerType="software" />
+            <!--商品信息列表-->
+            <ListView
+                android:id="@+id/listview_orderinfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y283"
+                android:layout_weight="1"
+                android:divider="@null" />
+            <!--备注信息-->
+            <!--虚线-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/xu_line"
+                android:layerType="software" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    >
+                    <TextView
+                        android:id="@+id/table_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:text="柳州5号桌"
+                        android:textColor="#3387d0"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="25dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="总计："
+                        android:textColor="#655b59"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/moneyimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:textColor="#655b59"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/order_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="314"
+                        android:textColor="#655b59"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--这个是订单的底部-->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sipiao_bar" />
+
+            <RelativeLayout
+                android:id="@+id/bottom_btn_box2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/orderbottom"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/tijiao_btn"
+                     android:layout_width="match_parent"
+                     android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/zeronebutton_bg"
+                    android:text="提交订单"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bottom_btn_box"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/orderbottom"
+                android:gravity="center"
+                android:visibility="gone">
+                <Button
+                    android:id="@+id/jiezhang_btn"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/zeronebutton_bg"
+                    android:text="结账"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--标题展示-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="客服工作台地址:"
+               style="@style/order_people_neibu_title"
+            />
+        <TextView
+            android:id="@+id/people_kefu_url"
+            android:text="http://o2o.greengod.cn/mobile.php?act=module name=bj_qmxk do=customlist weid=12"
+            style="@style/order_people_neibu_title"
+            />
+
+        <TextView
+            android:text="(客服人员在此用手机可以查看在门店现场接待的客户)"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            style="@style/order_people_neibu_title"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#888888"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               >
+             <!--主题内容-->
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--门店-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                >
+                <!--门店-->
+                <LinearLayout
+                    style="@style/fendian_layout"
+                    >
+
+                    <TextView
+                        android:text="门店:"
+                        style="@style/fendian_text01"
+                        />
+
+                    <TextView
+                        android:id="@+id/fendian_text"
+                        android:text="请选择"
+                        style="@style/fendian_text02"
+                        android:paddingRight="10dp"
+                        android:drawableRight="@mipmap/ic_sanjiaoixng"
+                        />
+
+                </LinearLayout>
+
+                <!--职务-->
+
+                <LinearLayout
+                    style="@style/fendian_layout">
+
+                    <TextView
+                        android:text="职务:"
+                        style="@style/fendian_text01"
+                        />
+
+                    <TextView
+                        android:id="@+id/dianpu_people"
+                        android:text="请选择"
+                        style="@style/fendian_text02"
+                        android:paddingRight="10dp"
+                        android:drawableRight="@mipmap/ic_sanjiaoixng"
+                        />
+
+                </LinearLayout>
+
+                <!--ID-->
+                <LinearLayout
+                    style="@style/fendian_layout">
+
+                    <TextView
+                        android:text="ID:"
+                        style="@style/fendian_text01"
+
+
+                        />
+
+                    <EditText
+                        android:id="@+id/people_edt_ID"
+                        style="@style/fendian_text02"
+                        android:gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+                <!--昵称:-->
+                <LinearLayout
+                    style="@style/fendian_layout">
+
+                    <TextView
+                        android:text="昵称:"
+                        android:paddingLeft="10dp"
+                        style="@style/fendian_text01"
+                        />
+
+                    <EditText
+                        android:id="@+id/people_edt_nicheng"
+                        style="@style/fendian_text02"
+                        android:paddingLeft="10dp"
+                        android:gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    >
+                    <!--昵称:-->
+                    <LinearLayout
+                        style="@style/fendian_layout">
+
+                        <TextView
+                            android:text="QQ:"
+                            style="@style/fendian_text01"
+                            />
+
+                        <EditText
+                            android:id="@+id/people_edt_qq"
+                            style="@style/fendian_text02"
+                            />
+
+                    </LinearLayout>
+                    <!--手机:-->
+                    <LinearLayout
+                        style="@style/fendian_layout">
+
+                        <TextView
+                            android:text="手机:"
+                            style="@style/fendian_text01"
+                            />
+
+                        <EditText
+                            android:id="@+id/people_edt_phone"
+                            style="@style/fendian_text02"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/fendian_layout">
+
+                        <TextView
+                            android:text="标签:"
+                            style="@style/fendian_text01"
+                            />
+
+                        <TextView
+                            android:id="@+id/dianpu_tag"
+                            android:text="请选择"
+                            style="@style/fendian_text02"
+                            android:paddingRight="10dp"
+                            android:drawableRight="@mipmap/ic_sanjiaoixng"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/fendian_layout">
+
+
+                        <Button
+                            android:id="@+id/chengyushuju"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="#fff"
+                            android:text="删除冗余数据"
+                            android:background="@drawable/oder_dai_paystate_bg02"
+                            />
+
+                        <Button
+                            android:id="@+id/sousuo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="#fff"
+                            android:background="@drawable/xianxia_xuanze_btn"
+                            android:textSize="14sp"
+                            android:text="搜索"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+        </LinearLayout>
+
+       <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" 
+        android:layout_margin="15dp"
+        android:background="@drawable/juxingwuyuanjiaohuisebiankuang"
+        android:orientation="vertical">
+           
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:background="#55888888"
+              >
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="名单"
+                  android:textSize="18sp"
+                  android:layout_centerVertical="true"
+                  android:layout_marginLeft="15dp"
+                  />
+              <TextView
+                  android:id="@+id/zongshu_zhi"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="4"
+                  android:layout_alignParentRight="true"
+                  android:layout_marginRight="15dp"
+                  android:textSize="18sp"
+                  android:layout_centerVertical="true"
+                  android:textColor="#ff0000"
+                  android:layout_marginLeft="15dp"
+                  />
+              <TextView
+                  android:id="@+id/zongshu"
+                  android:layout_toLeftOf="@id/zongshu_zhi"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="总数:"
+                  android:textSize="18sp"
+                  android:layout_centerVertical="true"
+                  android:textColor="#ff0000"
+                  android:layout_marginLeft="15dp"
+                  />
+
+          </RelativeLayout>
+           
+           
+           
+                <!--列表标题-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/juxingwuyuanjiaohuisebiankuang_people_neibu">
+
+                    <TextView
+                        android:text="当前昵称(ID)"
+                        android:layout_width="100dp"
+                        style="@style/order_liebiaoTitle"
+                        />
+
+                    <TextView
+                        android:text="会员标签"
+                        android:layout_width="60dp"
+                        style="@style/order_liebiaoTitle"
+                        />
+
+                    <TextView
+                        android:text="QQ号"
+                        android:layout_width="100dp"
+                        style="@style/order_liebiaoTitle"
+                        />
+
+                    <TextView
+                        android:text="个人手机号"
+                        android:layout_width="100dp"
+                        style="@style/order_liebiaoTitle"
+                        />
+
+                    <TextView
+                    android:text="余额"
+                    android:layout_width="70dp"
+                    android:gravity="center"
+                    style="@style/order_liebiaoTitle"
+                        />
+
+                    <TextView
+                    android:text="积分"
+                    android:layout_width="40dp"
+                    android:gravity="center"
+                    style="@style/order_liebiaoTitle"
+                        />
+
+                    <TextView
+                    android:text="授权时间"
+                    android:layout_width="60dp"
+                    android:gravity="center"
+                    style="@style/order_liebiaoTitle" />
+
+                    <TextView
+                        style="@style/order_liebiaoTitle"
+                        android:layout_width="65dp"
+                        android:gravity="center"
+                        android:text="	点击统计" />
+
+                    <TextView
+                        android:text="所属门店"
+                        android:layout_width="80dp"
+                        android:gravity="center"
+                        style="@style/order_liebiaoTitle" />
+
+                    <TextView
+                        android:text="服务"
+                        android:layout_width="60dp"
+                        android:gravity="center"
+                        style="@style/order_liebiaoTitle" />
+
+                    <TextView
+                        android:text="操作"
+                        android:layout_width="120dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        style="@style/order_liebiaoTitle"
+                        />
+                </LinearLayout>
+
+                <!--列表内容-->
+
+                <ListView
+                    android:id="@+id/listview_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </LinearLayout>
+       </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

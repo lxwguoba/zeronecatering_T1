@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#eaeaea">
+
+    <!--这个是订单展示栏-->
+    <RelativeLayout
+        android:layout_width="@dimen/x344"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="@dimen/x319"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_marginBottom="@dimen/x10"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@drawable/foodlayout_bg"
+            android:orientation="vertical">
+            <!--这个是订单的标题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x74"
+                >
+                <TextView
+                    android:id="@+id/btn_dd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="订单"
+                    android:textSize="20sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/table_ctrl_bg_left"/>
+                <!--预约已取消-->
+                <!--<TextView-->
+                    <!--android:id="@+id/btn_yy"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:text="预约"-->
+                    <!--android:textSize="20sp"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/table_ctrl_bg_right"/>-->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="#c8c3bf" />
+            <!--商品列表头部-->
+            <FrameLayout
+                android:id="@+id/ctrl_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--这个是主题 分为连个一个是标题  一个是主要内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--这个是标题内容的三大订单     -->
+        <RelativeLayout
+            android:id="@+id/three_control"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:background="#0eb468"
+            android:layout_height="@dimen/y86">
+
+            <ImageView
+                android:id="@+id/imgbutton_one"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/y30"
+                android:src="@mipmap/menu_icon_02"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x42" />
+
+            <ImageView
+                android:id="@+id/img_canwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/canwei_icon"
+                android:layout_marginLeft="@dimen/x182"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/img_diancan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/diancan_icon"
+                android:layout_centerInParent="true" />
+
+            />
+
+            <ImageView
+                android:id="@+id/img_dingdan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/dingdan_icon"
+                android:layout_marginRight="@dimen/x182"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/out_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/x42"
+                android:src="@mipmap/out_icon" />
+        </RelativeLayout>
+        <!--这个是标题内容-->
+        <RelativeLayout
+            android:id="@+id/order_MainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x86"
+            android:background="#0eb468">
+
+            <ImageView
+                android:id="@+id/imgbutton_two"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x42"
+                android:src="@mipmap/menu_icon_02" />
+
+            <TextView
+                android:id="@+id/titleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="餐桌管理"
+                android:textColor="#fff"
+                android:textSize="28sp" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imgbutton_sanjiaoxing"-->
+            <!--android:layout_width="16dp"-->
+            <!--android:layout_height="12dp"-->
+            <!--android:layout_marginRight="42dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@mipmap/sanjiaoxing" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/username"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Lihl"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@id/imgbutton_sanjiaoxing"-->
+            <!--android:textSize="17sp"-->
+            <!--android:textColor="#fff" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/userTag"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="管理员:"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@id/username"-->
+            <!--android:textSize="17sp"-->
+            <!--android:textColor="#fff" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/guanliyuan_icon"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:layout_toLeftOf="@id/userTag"-->
+            <!--android:layout_centerVertical="true" />-->
+
+        </RelativeLayout>
+        <!--这个是主题的内容 包含了两个  一个是桌子分类 一个是菜的桌子信息展示-->
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/x12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x12"
+            android:layout_marginBottom="@dimen/x12"
+            android:background="@drawable/foodlayout_bg"
+            android:orientation="vertical">
+            <!---->
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:numColumns="5"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="#c8c8c8" />
+
+            <GridView
+                android:id="@+id/gridview_table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/x4"
+                android:numColumns="3"
+                android:padding="@dimen/x20"
+                android:verticalSpacing="@dimen/x20"></GridView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

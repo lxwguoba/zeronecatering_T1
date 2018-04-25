@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/xianxia_edt_list03"
+        android:divider="#DDDDDD"
+        android:padding="5dp"
+        android:dividerHeight="0.5dp"
+        android:layout_width="160dp"
+        android:background="@drawable/xianxia_btn_bg_001"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/y20"
+        android:paddingBottom="@dimen/y20"
+        >
+        <TextView
+            android:layout_width="@dimen/x80"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/tablename"
+            android:text="桌号"
+            />
+        <TextView
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/ordersn"
+            android:text="单号"
+            />
+        <TextView
+            android:layout_width="@dimen/x50"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/datenum"
+            android:text="人数"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/bottom_top_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:text=" "
+        android:background="@drawable/table_bg_dotted"
+        android:layerType="software"
+        />
+</LinearLayout>

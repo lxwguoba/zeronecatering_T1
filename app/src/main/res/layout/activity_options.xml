@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    android:background="@drawable/options_layout"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y40"
+        android:background="@drawable/options_text"
+        android:gravity="center"
+        android:text="选择口味"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#fff"
+            android:dividerHeight="0.5dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layout">
+        <TextView
+            android:id="@+id/priceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="价格:"
+            android:layout_marginLeft="@dimen/x25"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/priceText"
+            android:layout_centerVertical="true"
+            android:text="￥0.00"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/options_btn"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x25"
+            android:background="@drawable/zeronebutton_bg"
+            android:text="确定"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</LinearLayout>

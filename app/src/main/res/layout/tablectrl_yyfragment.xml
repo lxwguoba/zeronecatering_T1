@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/list_box"
+    >
+    <LinearLayout
+        android:id="@+id/bottom_top_box"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/x10"
+            android:paddingBottom="@dimen/x10"
+           >
+            <TextView
+                android:layout_width="@dimen/x50"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" "                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="日期"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="时间"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_below="@+id/bottom_top_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x2"
+            android:text=" "
+            android:background="@drawable/table_bg_dotted"
+            android:layerType="software"
+            />
+    </LinearLayout>
+    <GridView
+        android:layout_below="@+id/bottom_top_box"
+        android:layout_above="@+id/bottom_add_btn"
+        android:id="@+id/gridview_yy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="1"
+        android:gravity="center"
+        android:background="#fff">
+    </GridView>
+    <RelativeLayout
+        android:id="@+id/bottom_add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y15"
+        android:layout_above="@+id/bottom_btn_line">
+        <Button
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/y30"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/yuyue_add"
+            android:id="@+id/yuyue_add"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/bottom_btn_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_btn_box"
+        android:src="@mipmap/sipiao_bar"
+        />
+    <RelativeLayout
+        android:id="@+id/bottom_btn_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/orderbottom">
+
+        <Button
+            android:id="@+id/revoke_btn"
+            android:layout_width="@dimen/x267"
+            android:layout_height="@dimen/y60"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/zeronebutton_bg"
+            android:text="撤销预订"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</RelativeLayout>
+
+</LinearLayout>
+

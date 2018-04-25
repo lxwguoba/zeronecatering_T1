@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/input_trans_type_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/trans_type"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/input_payment_type_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/payment_type"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/input_money_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_money"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/input_trans_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_trans_id"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/input_ori_voucher_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_ori_voucher_no"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:textSize="14dp" />
+
+
+    <EditText
+        android:id="@+id/ori_date_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_ori_date"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/ori_reference_no_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_ori_reference_no"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/ori_QROrderNo_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_ori_QROrderNo"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/appId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_app_id"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ok" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x400"
+    android:layout_height="@dimen/y520"
+    android:background="#0eb468"
+    android:orientation="vertical"
+    >
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="25sp"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="@dimen/y10"
+       android:textColor="#fff"
+       android:text="价格信息表"
+       />
+    <ListView
+        android:id="@+id/pricelsitview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_marginLeft="@dimen/x25"
+        android:divider="#fff"
+        android:dividerHeight="@dimen/y1"
+        android:layout_weight="1"
+        android:layout_marginRight="@dimen/x25"
+        android:layout_height="match_parent"/>
+     <Button
+         android:id="@+id/btn"
+         android:layout_width="@dimen/x75"
+         android:layout_height="@dimen/y40"
+         android:layout_marginLeft="@dimen/x25"
+         android:layout_marginTop="@dimen/x5"
+         android:background="@drawable/vipbtn"
+         android:textSize="20sp"
+         android:layout_marginBottom="@dimen/y10"
+         android:textColor="#fff"
+         android:text="返回"
+         />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fefefe"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录页面"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:layout_marginTop="50px"
+        />
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/userlayout"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="horizontal"
+        android:paddingLeft="40px"
+        android:paddingRight="40px"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:background="#000"
+            android:layout_marginRight="20px"
+            />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/psdlayout"
+            android:layout_below="@id/userlayout"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:orientation="horizontal"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:background="#000"
+                android:layout_marginRight="20px"
+                />
+            <EditText
+                android:id="@+id/psd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                 android:hint="密码" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/sublayout"
+            android:layout_below="@id/psdlayout"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:orientation="horizontal"
+            android:paddingLeft="40px"
+            android:paddingRight="40px"
+            android:gravity="center_vertical"
+            >
+            <Button
+                android:id="@+id/sub_qx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   />
+            <Button
+                android:id="@+id/sub_qd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录"
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

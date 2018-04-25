@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <!--标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#438Eb9"
+        >
+
+         <ImageView
+             android:id="@+id/biozhi_img"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="15dp"
+             android:src="@mipmap/ic_shuye_128_logo"
+             />
+
+        <TextView
+            android:id="@+id/fendian_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/biozhi_img"
+            android:text="坂田分店"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            />
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_alignParentRight="true"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/header_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_logo"
+                />
+
+             <TextView
+                 android:id="@+id/hy"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="欢迎光临"
+                 android:layout_alignTop="@id/header_img"
+                 android:textSize="18sp"
+                 android:layout_marginLeft="15dp"
+                 android:textColor="#fff"
+                 android:layout_toRightOf="@id/header_img"
+                 />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="锅巴"
+
+                android:layout_alignLeft="@id/hy"
+                android:layout_below="@id/hy"
+                android:textColor="#fff"
+                android:textSize="16sp"
+            />
+
+             <ImageView
+                 android:id="@+id/sanjiaoxing"
+                 android:layout_marginLeft="15dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:src="@mipmap/ic_saojiaoxing_64_logo"
+                 android:layout_toRightOf="@id/hy"
+                 />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--主题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <Button
+                    android:id="@+id/xianxia"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/activity_listitems_btn"
+                    android:textColor="#fff"
+                    android:layout_centerInParent="true"
+                    android:text="收银台"
+                    android:textSize="26sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+
+                >
+
+                <Button
+                    android:id="@+id/order"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:text="订单"
+                    android:layout_centerInParent="true"
+                    android:textColor="#fff"
+                    android:background="@drawable/activity_listitems_btn"
+                    android:textSize="26sp" />
+
+            </RelativeLayout>
+
+
+
+            <!--<Button-->
+                <!--android:id="@+id/people"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="人员管理"-->
+                <!--android:textSize="16sp" />-->
+        </LinearLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#55000000"
+            />
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

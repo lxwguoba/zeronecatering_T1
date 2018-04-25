@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--选择-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/xianxia_btn_bg_02"
+            android:orientation="vertical">
+            <!--选择01-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="顾客"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#DDDDDD" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/guke_id"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/xianxia_edt_bg"
+                        android:hint="顾客id"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#DDDDDD" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/guke_name"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/xianxia_edt_bg"
+                        android:hint="顾客昵称"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#DDDDDD" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <EditText
+                        android:id="@+id/guke_phone"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/xianxia_edt_bg"
+                        android:hint="顾客手机"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#DDDDDD" />
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/guke"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/juxingyouyuanjiaohuisebiankuang_shiti"
+                        android:drawableLeft="@mipmap/ic_search_bg"
+                        android:paddingLeft="10dp"
+                        android:text="顾客搜索"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--android:background="@drawable/xianxia_btn_bg_001"-->
+            <!--选择02-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/xianxia_btn_bg_02"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="菜系"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#DDDDDD" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/select_edt_01"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/xianxia_edt_bg"
+                        android:drawableRight="@mipmap/ic_sanjiaoixng"
+                        android:gravity="center_vertical"
+                        android:hint="--请选择--"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#DDDDDD" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/xianxia_edt_bg"
+                        android:hint="关键字或条码"
+                        android:paddingLeft="10dp"
+                        android:textSize="14sp"
+                        android:id="@+id/keyword" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#DDDDDD" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                </RelativeLayout>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#DDDDDD" />
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/serch_p"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/juxingyouyuanjiaohuisebiankuang_shiti"
+                        android:drawableLeft="@mipmap/ic_search_bg"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:text="商品搜索"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="当前顾客" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="昵称:" />
+
+                <TextView
+                    android:id="@+id/nicheng"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="ID:" />
+
+                <TextView
+                    android:id="@+id/id_text"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="手机:" />
+
+                <TextView
+                    android:id="@+id/phone_text"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="积分:" />
+
+                <TextView
+                    android:id="@+id/jf_text"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="余额:" />
+
+                <TextView
+                    android:id="@+id/ye_text"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text="标签:" />
+
+                <TextView
+                    android:id="@+id/bq_text"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="3dp"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/bendian_sanke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/juxingyouyuanjiaohuisebiankuang_shiti"
+                    android:text="本店散客" />
+
+                <Button
+                    android:id="@+id/xianchang_guke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/juxingyouyuanjiaohuisebiankuang_shiti"
+                    android:text="现场顾客" />
+
+                <Button
+                    android:id="@+id/xianchang_qianru"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/juxingyouyuanjiaohuisebiankuang_shiti"
+                    android:text="现场签入" />
+
+                <TextView
+                    android:id="@+id/dianyuan"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/xianxia_edt_bg"
+                    android:drawableRight="@mipmap/ic_sanjiaoixng"
+                    android:gravity="center_vertical"
+                    android:hint="请选择店员"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/xianxia_submit_btn"
+                    android:text="提交订单"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--为选择商品-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="未选商品"
+                    android:textSize="18sp"
+                    android:textColor="#0000ff" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/xianxia_btn_bg_001"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <TextView
+                        style="@style/shangping"
+                        android:text="菜品ID"
+                        android:layout_weight="0.1"
+                        />
+                    <TextView
+                        style="@style/shangping"
+                        android:layout_weight="1"
+                        android:text="菜品信息" />
+                    <TextView
+                        style="@style/shangping"
+                        android:layout_width="75dp"
+                        android:layout_weight="0.2"
+                        android:text="菜品选择" />
+                </LinearLayout>
+                <ScrollView
+                     android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+                <ListView
+                    android:id="@+id/listview_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xianxia_btn_bg_001">
+                </ListView>
+                </ScrollView>
+            </LinearLayout>
+
+            <!--已选择商品-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:text="已选商品"
+                        android:textSize="18sp"
+                        android:textColor="#ff0000" />
+
+                    <TextView
+                        android:id="@+id/yuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="15dp"
+                        android:text="元"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/yuan"
+                        android:text="0"
+                        android:textColor="#ff0000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/zongje"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/money"
+                        android:text="总金额:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/jian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/zongje"
+                        android:text="件"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/jian"
+                        android:text="0"
+                        android:textColor="#ff0000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/count"
+                        android:text="总件数:"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/xianxia_btn_bg_001"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        style="@style/shangping"
+                        android:text="@string/foodid"
+                        android:layout_weight="0.1"
+                        />
+
+                    <TextView
+                        style="@style/shangping"
+                        android:layout_weight="1"
+                        android:text="菜信息" />
+                    <!--<TextView-->
+                        <!--style="@style/shangping"-->
+                         <!--android:layout_width="70dp"-->
+                        <!--android:text="规格" />-->
+
+                    <TextView
+                        style="@style/shangping"
+                        android:layout_weight="0.5"
+                        android:text="菜操作" />
+
+                </LinearLayout>
+                <ScrollView
+                  android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+                <ListView
+                    android:id="@+id/listview_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/xianxia_btn_bg_001">
+                </ListView>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="80dp"/>
+ </LinearLayout>
+
+</LinearLayout>

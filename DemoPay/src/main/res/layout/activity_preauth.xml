@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_mode_payment"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/mode_payment_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/select_mode_payment"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/preauth_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/preauth_rb"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:id="@+id/preauth_revoke_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preauth_revoke_rb"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:id="@+id/preauth_complete_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preauth_complete_rb"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+
+        <RadioButton
+            android:id="@+id/preauth_complete_revoke_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preauth_complete_revoke_rb"
+            android:textColor="#000000"
+            android:textSize="14dp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_ori_voucher_no"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/input_ori_voucher_no_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_ori_voucher_no"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_money"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/input_money_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_money"
+        android:inputType="number"
+        android:maxLength="9"
+        android:textColor="#000000"
+        android:textColorHint="#666666"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ok" />
+</LinearLayout>

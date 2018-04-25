@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">智·收银台</string>
+    <string name="foodid">菜品ID</string>
+    <string name="starttime">开始时间</string>
+    <string name="endtime">结束时间:</string>
+    <string name="qingxuanze">请选择</string>
+    <string name="chaxun">查询</string>
+    <string name="totalmoney">总计金额：</string>
+    <string name="pagemoney">本页金额：</string>
+    <string name="kaishishijian">开始时间:</string>
+    <string name="xiadanshijian">下单时间</string>
+    <string name="ordersn">订单编号</string>
+    <string name="nincheng">昵称</string>
+    <string name="zhuohao">桌号</string>
+    <string name="telephonenumber">联系电话</string>
+    <string name="paytype">支付方式</string>
+    <string name="ordertype">订单类型</string>
+    <string name="printertype">打印状态</string>
+    <string name="state">状态</string>
+    <string name="money">金额</string>
+    <string name="caozuo">操作</string>
+    <string name="order">订单</string>
+    <string name="guanliyuan">管理员:</string>
+    <string name="dianjicanzhuooqing">点击餐桌哦 亲</string>
+</resources>

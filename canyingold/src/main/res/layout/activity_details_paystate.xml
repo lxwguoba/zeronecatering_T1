@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/xianxia_edt_bg"
+        android:padding="10dp"
+        android:orientation="vertical"
+        >
+        
+        <TextView
+            android:id="@+id/cashpay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:text="现场现金支付"
+            android:gravity="center"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#EEEEEE"
+            />
+        <TextView
+            android:id="@+id/postpay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="现场刷卡支付"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#EEEEEE"
+            />
+        <TextView
+            android:id="@+id/alpay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="现场支付宝支付"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#EEEEEE"
+            />
+        <TextView
+            android:id="@+id/wxpay"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="现场微信支付"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

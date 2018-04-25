@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y45"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/leveltextname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="会员折扣："
+            />
+
+        <TextView
+            android:id="@+id/levelname"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="6.8折会员"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/y45"
+       android:orientation="horizontal"
+       >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:textSize="18sp"
+           android:textColor="#fff"
+           android:text="会员等级："
+           />
+
+       <TextView
+           android:id="@+id/levelid"
+           android:layout_gravity="center_vertical"
+           android:textSize="20sp"
+           android:textColor="#fff"
+           android:text="6"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y45"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="会员价格："
+            />
+
+        <TextView
+            android:id="@+id/levelprice"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:text="￥256"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

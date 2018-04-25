@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DemoPay/DemoPay.iml" filepath="$PROJECT_DIR$/DemoPay/DemoPay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/canyingold/canyingold.iml" filepath="$PROJECT_DIR$/canyingold/canyingold.iml" />
+      <module fileurl="file://$PROJECT_DIR$/guoba/guoba.iml" filepath="$PROJECT_DIR$/guoba/guoba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/html/html.iml" filepath="$PROJECT_DIR$/html/html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zarone.iml" filepath="$PROJECT_DIR$/zarone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zerone_mi/zerone_mi.iml" filepath="$PROJECT_DIR$/zerone_mi/zerone_mi.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaeaea"
+     android:orientation="vertical"
+    >
+    <!--这个是标题内容 @dimen/x1226-->
+    <RelativeLayout
+        android:id="@+id/order_MainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginLeft="@dimen/x12"
+        android:background="#0eb468">
+
+    <ImageView
+        android:id="@+id/imgbutton_two"
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/y30"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x42"
+        android:src="@mipmap/menu_icon_02" />
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="预约列表"
+        android:textColor="#fff"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:id="@+id/linerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y86"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x42"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/imgbutton_sanjiaoxing"
+            android:layout_width="@dimen/x16"
+            android:layout_height="@dimen/y12"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x10"
+            android:src="@mipmap/sanjiaoxing" />
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_marginLeft="@dimen/x12"
+        android:layout_marginRight="@dimen/x12"
+        android:layout_marginBottom="@dimen/y10"
+        android:orientation="vertical"
+        android:background="@drawable/dingdan_content_bg"
+        android:layout_gravity="center_horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/layout_data"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y60"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/x12"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="@dimen/x200"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:text="用户姓名"
+                    />
+                <TextView
+                    android:id="@+id/userPhone"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="联系电话"
+                    />
+                <TextView
+                    android:id="@+id/peopleCount"
+                    android:text="用餐人数"
+                    android:textSize="18sp"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/createOrderTime"
+                    android:layout_width="@dimen/x200"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:text="预约时间"
+                    />
+                <TextView
+                    android:id="@+id/deleteOrder"
+                    android:layout_width="@dimen/x100"
+                    android:layout_marginLeft="@dimen/x100"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:text="状态"
+                    />
+             </LinearLayout>
+             <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y1"
+            android:background="@drawable/xu_line"
+            android:layerType="software"
+            />
+             <ListView
+        android:id="@+id/yuyue_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x12"
+        />
+        </LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout_tishi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#efefef"
+                android:text="亲还没有预约订单哦！"
+                 android:textSize="38sp"
+                />
+        </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>

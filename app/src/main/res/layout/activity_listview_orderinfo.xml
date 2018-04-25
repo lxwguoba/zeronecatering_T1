@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="五彩祥云"
+            android:layout_centerVertical="true"
+            android:textColor="#655b59"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/foodCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="58"
+            android:textColor="#655b59"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_centerVertical="true"
+            android:text="32"
+            android:textColor="#655b59"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <!--虚线-->
+
+    <LinearLayout
+        android:id="@+id/optionlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/x25"
+            android:gravity="center_vertical"
+            android:text="口味："
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/optiontitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="酸甜苦辣熏酸甜苦辣熏酸甜苦"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/xu_line"
+        android:layerType="software" />
+</LinearLayout>

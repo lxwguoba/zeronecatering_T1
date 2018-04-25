@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--导航栏部分-->
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:background="@mipmap/left_ordercontrol_bg_icon"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="96dp"
+            android:background="#0eb468">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/header"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/customer_heard" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="#fff" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0eb468"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/daifukuang"
+                style="@style/neworderbutton"
+                android:layout_width="match_parent"
+                android:checked="true"
+                android:drawableTop="@mipmap/icon_second_dfk"
+                android:text="待付款" />
+            />
+            <!--#c8b8a9-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_gravity="center_horizontal"
+                android:background="#fff" />
+
+            <RadioButton
+                android:id="@+id/yifukuang"
+                style="@style/neworderbutton"
+                android:layout_width="match_parent"
+                android:drawableTop="@mipmap/icon_second_yfk"
+                android:text="已付款" />
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_gravity="center_horizontal"
+                android:background="#fff" />
+            <!--新添加预约列表-->
+            <RadioButton
+                android:id="@+id/yuyue"
+                style="@style/neworderbutton"
+                android:layout_width="match_parent"
+                android:drawableTop="@mipmap/icon_second_dsh"
+                android:text="预约订单" />
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_gravity="center_horizontal"
+                android:background="#fff" />
+            <RadioButton
+                android:id="@+id/yiwangcheng"
+                style="@style/neworderbutton"
+                android:layout_width="match_parent"
+                android:drawableTop="@mipmap/icon_second_ywc"
+                android:text="已完成" />
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_gravity="center_horizontal"
+                android:background="#fff" />
+            <RadioButton
+                android:id="@+id/qubudingdan"
+                style="@style/neworderbutton"
+                android:layout_width="match_parent"
+                android:drawableTop="@mipmap/icon_second_qbdd"
+                android:text="全部订单" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y1"
+                android:layout_gravity="center_horizontal"
+                android:background="#fff" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="桌子名称："
+            android:layout_centerVertical="true"
+            android:textColor="#000"
+            android:textSize="24sp"
+            />
+        <EditText
+            android:id="@+id/tableName"
+            android:layout_toRightOf="@id/table"
+            android:layout_width="210dp"
+            android:paddingLeft="15dp"
+            android:layout_marginLeft="38dp"
+            android:textSize="20sp"
+            android:hint="请输入桌子名称"
+            android:layout_centerVertical="true"
+            android:background="@drawable/xianxia_edt_bg"
+            android:layout_height="48dp" />
+        <TextView
+            android:id="@+id/selectState"
+            android:layout_width="210dp"
+            android:layout_height="48dp"
+            android:layout_toRightOf="@id/tableName"
+            android:background="@drawable/xianxia_edt_bg"
+            android:drawableRight="@mipmap/ic_sanjiaoixng"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:hint="--请选择--"
+            android:textSize="20sp"
+            android:paddingRight="15dp"
+           />
+    </RelativeLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </GridLayout>
+
+</LinearLayout>

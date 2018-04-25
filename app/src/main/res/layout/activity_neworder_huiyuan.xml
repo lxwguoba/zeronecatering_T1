@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/huiyuanxinxi_bg"
+    >
+    <!--标题展示 #34923E   @mipmap/huiyuanxinxi_header-->
+    <RelativeLayout
+        android:id="@+id/search_body"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#34923E">
+        <ImageView
+            android:id="@+id/huiyuanxini_return"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:src="@mipmap/huiyuanxinxi_reture" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="会员信息"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+        <ImageView
+            android:id="@+id/huiyuan_search"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/huiyuanxinxi_search" />
+        <RelativeLayout
+            android:id="@+id/serch_edit"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:background="@mipmap/search_edit"
+            android:visibility="gone"
+          >
+            <EditText
+                android:id="@+id/serch_info"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:hint="昵称/手机号"
+                android:paddingLeft="15dp"
+                android:textColor="#555555"
+                android:textColorHint="#dadfe9"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/search_btn"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/search_small_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+<!-- android:layout_width="@dimen/x1342"
+        android:layout_height="@dimen/y580"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="12dp"
+        android:background="@mipmap/huiyuan_body"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="@dimen/x1182"
+            android:layout_height="@dimen/x1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x33"
+            android:background="#cecece" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_gravity="center_horizontal">
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="#cecece" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#34923E"
+                android:gravity="center"
+                android:text="编号"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="#cecece" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#34923E"
+                android:gravity="center"
+                android:text="ID"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="#cecece" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#34923E"
+                android:gravity="center"
+                android:text="姓名"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="#cecece" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#34923E"
+                android:gravity="center"
+                android:text="会员手机号"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="#cecece" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#34923E"
+                android:gravity="center"
+                android:text="积分"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="#cecece" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#34923E"
+                android:gravity="center"
+                android:text="余额"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="#cecece" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#34923E"
+                android:gravity="center"
+                android:text="备注"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="#cecece" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/x1182"
+            android:layout_height="@dimen/y1"
+            android:layout_gravity="center_horizontal"
+            android:background="#cecece" />
+
+        <!-- android:descendantFocusability="blocksDescendants"
+        子类有点击事件时会产生事件冲突 所以这个属性是解决冲突的 现在的状态是子类的点击事件没用了-->
+        <ListView
+            android:id="@+id/huiyuan_listview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y372"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_weight="1"
+            android:descendantFocusability="blocksDescendants" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/huiyuan_heard"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                 android:layout_gravity="center"
+                android:src="@mipmap/ic_logo"
+                 />
+            <TextView
+                android:id="@+id/huiyuan_ID"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="会员ID"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/huiyuan_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="会员姓名"
+                android:textSize="16sp" />
+            <!--android:layout_weight="1"-->
+            <TextView
+                android:id="@+id/huiyuan_phone"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/huiyuan_jifen"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="会员积分"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/huiyuan_yue"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="会员余额"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/huiyuan_biaoqian"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="标签"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+</LinearLayout>

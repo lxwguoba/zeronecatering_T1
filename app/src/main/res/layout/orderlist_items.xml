@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/o_ordersn"
+            android:text="17052807662087"
+            android:layout_width="140dp"
+            style="@style/order_liebiaoTitle"
+            />
+
+        <TextView
+            android:id="@+id/o_shouhuo_name"
+            android:text="QQ女孩"
+            android:layout_width="80dp"
+            style="@style/order_liebiaoTitle"
+            />
+
+        <TextView
+            android:id="@+id/o_phone"
+            style="@style/order_liebiaoTitle"
+            android:layout_width="100dp"
+            android:text="13534104177" />
+
+        <TextView
+            android:id="@+id/o_payState"
+            android:text="在线余额支付"
+            android:layout_width="100dp"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:background="@drawable/oder_dai_paystate_bg"
+            style="@style/order_liebiaoTitle"
+            />
+
+        <TextView
+            android:id="@+id/o_leixing"
+            android:text="门店自提"
+            android:layout_width="70dp"
+            android:gravity="center"
+            style="@style/order_liebiaoTitle"
+            />
+
+        <TextView
+            android:id="@+id/o_yf"
+            android:text="	0.00"
+            android:gravity="center"
+            android:layout_width="40dp"
+            style="@style/order_liebiaoTitle"
+            />
+
+        <TextView
+            android:id="@+id/o_money"
+            android:text="69元"
+            android:gravity="center"
+            android:layout_width="40dp"
+            style="@style/order_liebiaoTitle" />
+
+        <TextView
+            android:id="@+id/o_state"
+            style="@style/order_liebiaoTitle"
+            android:layout_width="65dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:background="@drawable/oder_dai_paystate_bg"
+            android:text="	待发货" />
+
+        <TextView
+            android:id="@+id/o_time"
+            android:text="2017-05-28 07:25:58"
+            android:layout_width="150dp"
+            android:gravity="center"
+            style="@style/order_liebiaoTitle" />
+
+        <TextView
+            android:id="@+id/o_ywtc"
+            android:text="3.45元"
+            android:layout_width="100dp"
+            android:gravity="center"
+            style="@style/order_liebiaoTitle" />
+
+
+         <RelativeLayout
+             android:layout_width="0dp"
+             android:layout_height="50dp"
+             android:layout_gravity="center_vertical"
+             android:layout_weight="1"
+             >
+             <Button
+                 android:id="@+id/o_do"
+                 android:text="查看详情"
+                 android:background="@drawable/xianxia_xuanze_btn"
+                 android:textColor="#fff"
+                 android:layout_width="80dp"
+                 android:layout_height="35dp"
+                 android:layout_centerVertical="true"
+                 style="@style/order_liebiaoTitle"
+                 />
+
+             <Button
+                 android:id="@+id/o_add"
+                 android:text="添加菜品"
+                 android:background="@drawable/xianxia_xuanze_btn"
+                 android:textColor="#fff"
+                 android:layout_width="80dp"
+                 android:layout_height="35dp"
+                 android:layout_toRightOf="@id/o_do"
+                 android:layout_marginLeft="10dp"
+                 style="@style/order_liebiaoTitle"
+                 android:layout_centerVertical="true"
+                 />
+         </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

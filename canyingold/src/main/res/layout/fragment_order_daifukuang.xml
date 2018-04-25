@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--标题展示-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:text="本页合计:"
+               style="@style/order_daifukuang_title"
+            />
+        <TextView
+            android:id="@+id/pageTotalMoney"
+            android:text="0元"
+            style="@style/order_daifukuang_title"
+            />
+
+        <TextView
+            android:text="总合计:"
+            android:layout_marginLeft="30dp"
+            style="@style/order_daifukuang_title"
+            />
+        <TextView
+            android:id="@+id/totalMoney"
+            android:text="0元"
+            style="@style/order_daifukuang_title"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#888888"
+        />
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:fillViewport="true"-->
+        <!--&gt;-->
+        <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               >
+             <!--主题内容-->
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--选择分店-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                >
+                <!--店铺人员-->
+                <LinearLayout
+                    style="@style/fendian_layout">
+
+                    <TextView
+                        android:text="店铺人员:"
+                        style="@style/fendian_text01"
+                        />
+
+                    <TextView
+                        android:id="@+id/dianpu_people"
+                        style="@style/fendian_text02"
+                        android:drawableRight="@mipmap/ic_sanjiaoixng"
+                        android:paddingRight="10dp"
+                        android:text="请选择" />
+
+                </LinearLayout>
+
+                <!--订单类型-->
+                <LinearLayout
+                    style="@style/fendian_layout">
+
+                    <TextView
+                        android:text="订单类型:"
+                        style="@style/fendian_text01"
+                        />
+
+                    <TextView
+                        android:id="@+id/orderstate_net"
+                        android:text="请选择"
+                        style="@style/fendian_text02"
+                        android:paddingRight="10dp"
+                        android:drawableRight="@mipmap/ic_sanjiaoixng"
+                        />
+
+                </LinearLayout>
+
+                <!--订单编号-->
+                <LinearLayout
+                    style="@style/fendian_layout"
+                    >
+
+                    <TextView
+                        android:text="订单编号:"
+                        style="@style/fendian_text01"
+                        />
+                    <EditText
+                        android:id="@+id/order_number"
+                        style="@style/fendian_text02"
+                        android:singleLine="true"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--订单编号-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                >
+
+                <!--开始时间-->
+                <LinearLayout
+                    style="@style/fendian_layout">
+                    <TextView
+                        android:text="开始时间:"
+                        style="@style/fendian_text01"
+                        />
+                    <TextView
+                        android:id="@+id/start_time"
+                        style="@style/fendian_text02"
+                        android:text="请选择"
+                        />
+                </LinearLayout>
+                <!--结束时间-->
+                <LinearLayout
+                    style="@style/fendian_layout">
+
+                    <TextView
+                        android:text="结束时间:"
+                        style="@style/fendian_text01"
+                        />
+                    <TextView
+                        android:id="@+id/order_end"
+                        android:text="请选择"
+                        style="@style/fendian_text02"
+                        />
+                </LinearLayout>
+
+                <!--支付方式-->
+                <LinearLayout
+                    style="@style/fendian_layout"
+                    >
+                    <TextView
+                        android:text="支付方式:"
+                        style="@style/fendian_text01"
+                        />
+                    <TextView
+                        android:id="@+id/pay_state"
+                        style="@style/fendian_text02"
+                        android:text="请选择"
+                        android:drawableRight="@mipmap/ic_sanjiaoixng"
+                        android:paddingRight="10dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--支付方式-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                >
+                <!--支付方式-->
+                <LinearLayout
+                    style="@style/fendian_layout"
+                    >
+                </LinearLayout>
+                <!--XXXXXX-->
+                <LinearLayout
+                    style="@style/fendian_layout">
+                    <TextView
+                        style="@style/fendian_text01"
+                        />
+                    <TextView
+                        style="@style/fendian_text02"
+                        android:background="@null"
+                        />
+                </LinearLayout>
+
+                <!--条件查询-->
+                <LinearLayout
+                    style="@style/fendian_layout"
+
+                    >
+                    <TextView
+                        style="@style/fendian_text01"
+                        />
+                    <Button
+                        android:id="@+id/tiaojian_chaxun"
+                        android:layout_height="40dp"
+                        android:layout_width="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/xianxia_xuanze_btn"
+                        android:text="按条件查询"
+                        android:textColor="#fff"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--列表标题-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/juxingwuyuanjiaohuisebiankuang_huiseshiti">
+
+            <TextView
+                android:text="订单编号"
+                android:layout_width="140dp"
+                style="@style/order_liebiaoTitle"
+                />
+
+            <TextView
+                android:text="收货人姓名"
+                android:layout_width="80dp"
+                style="@style/order_liebiaoTitle"
+                />
+
+            <TextView
+                android:text="联系电话"
+                android:layout_width="100dp"
+                style="@style/order_liebiaoTitle"
+                />
+
+            <TextView
+                android:text="支付方式"
+                android:layout_width="100dp"
+                style="@style/order_liebiaoTitle"
+                />
+
+            <TextView
+            android:text="订单类型"
+            android:layout_width="70dp"
+            android:gravity="center"
+            style="@style/order_liebiaoTitle"
+                />
+
+            <TextView
+            android:text="运费"
+            android:layout_width="40dp"
+            android:gravity="center"
+            style="@style/order_liebiaoTitle"
+                />
+
+            <TextView
+            android:text="金额"
+            android:layout_width="40dp"
+            android:gravity="center"
+            style="@style/order_liebiaoTitle" />
+
+            <TextView
+                style="@style/order_liebiaoTitle"
+                android:layout_width="65dp"
+                android:gravity="center"
+                android:text="	状态" />
+
+            <TextView
+                android:text="下单时间"
+                android:layout_width="150dp"
+                android:gravity="center"
+                style="@style/order_liebiaoTitle" />
+
+            <TextView
+                android:text="业务提成"
+                android:layout_width="100dp"
+                android:gravity="center"
+                style="@style/order_liebiaoTitle" />
+
+            <TextView
+                android:text="操作"
+                android:layout_width="120dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                style="@style/order_liebiaoTitle"
+
+                />
+        </LinearLayout>
+
+        <!--列表内容-->
+                <android.support.v4.widget.SwipeRefreshLayout
+                    android:id="@+id/swip_index"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <ListView
+                        android:id="@+id/listview_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp"
+                        >
+                    </ListView>
+                </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

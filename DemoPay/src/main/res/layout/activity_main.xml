@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_consume"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/consume"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_revoke"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/consume_revoke"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_return_goods"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/return_goods"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_pre_auth"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/pro_auth"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_settlement"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="结算"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_sign"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="签到"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_query_balance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="余额查询"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_system_manager"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="系统管理"
+            android:visibility="gone"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_print"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="打印"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_last_transaction_query"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="末笔查询"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_query_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="商户信息查询"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_sign_out"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:text="签退"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_select_consumption"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="自定义交易"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

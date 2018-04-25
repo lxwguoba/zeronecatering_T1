@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orderdetails_press_bg">
+
+        <RelativeLayout
+            android:layout_width="@dimen/x279"
+            android:layout_height="@dimen/y116"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/x6"
+            android:background="@drawable/fooditems_nb">
+            <!---->
+            <ImageView
+                android:id="@+id/foodImg"
+                android:layout_width="@dimen/x96"
+                android:layout_height="@dimen/y96"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x8"
+                android:src="@mipmap/cai6" />
+
+            <TextView
+                android:id="@+id/foodName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/x21"
+                android:layout_marginTop="@dimen/y24"
+                android:layout_toRightOf="@id/foodImg"
+                android:text="五彩详云"
+                android:textColor="#323232"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodCountName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/foodName"
+                android:layout_below="@id/foodName"
+                android:layout_marginTop="@dimen/y3"
+                android:text="库存"
+                android:textColor="#323232"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/foodCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/foodCountName"
+                android:layout_marginLeft="@dimen/x6"
+                android:layout_toRightOf="@id/foodCountName"
+                android:text="x10"
+                android:textColor="#323232"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/moneyImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/foodName"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/y24"
+                android:text="￥"
+                android:textColor="#f25b49"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/foodPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/moneyImg"
+                android:layout_toRightOf="@id/moneyImg"
+                android:text="32"
+                android:textColor="#f25b49"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/vipbtn"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/y20"
+                android:layout_alignTop="@id/foodPrice"
+                android:layout_marginRight="@dimen/x25"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/vip" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--菜单栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#EEEEEE"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/people_neibu"
+                android:text="内部人员"
+                style="@style/ordernavstyle"
+
+                />
+            <TextView
+                android:id="@+id/people_waibu"
+                android:text="外部人员"
+                style="@style/ordernavstyle"
+                />
+
+
+            <TextView
+                android:id="@+id/people_huiyuan"
+                android:text="管理会员标签"
+                android:layout_width="wrap_content"
+                style="@style/ordernavstyle"
+                />
+
+            <TextView
+                android:id="@+id/people_add_huiyuan"
+                style="@style/ordernavstyle"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:text="添加会员标签"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--每个页面显示的内容    android:background="#ff8f00"-->
+    <FrameLayout
+        android:id="@+id/people_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

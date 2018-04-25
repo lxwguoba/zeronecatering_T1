@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1237dp"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    >
+
+        <LinearLayout
+          android:layout_width="@dimen/x1213"
+          android:layout_height="@dimen/y40"
+          android:layout_gravity="center_horizontal"
+            >
+
+            <TextView
+                android:id="@+id/orderTime"
+                android:layout_width="@dimen/x170"
+                android:layout_height="match_parent"
+                android:text="下单时间"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                />
+            <TextView
+                android:id="@+id/orderNum"
+                android:layout_width="@dimen/x140"
+                android:layout_height="match_parent"
+                android:text="订单编号"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#b57d4c"
+                />
+
+            <TextView
+                android:id="@+id/orderUser"
+                android:layout_width="@dimen/x160"
+                android:layout_height="match_parent"
+                android:text="昵称"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                />
+            <TextView
+                android:id="@+id/userPhone"
+                android:layout_width="@dimen/x134"
+                android:layout_height="match_parent"
+                android:text="联系电话"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                />
+            <!--<TextView-->
+                <!--android:id="@+id/payTypes"-->
+                <!--android:layout_width="@dimen/x168"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="16sp"-->
+                <!--android:textColor="#666666"-->
+                <!--/>-->
+            <TextView
+                android:id="@+id/orderType"
+                android:layout_width="@dimen/x298"
+                android:layout_height="match_parent"
+                android:text="打印状态"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#b57d4c"
+                />
+
+            <TextView
+                android:id="@+id/orderStatus"
+                android:layout_width="@dimen/x100"
+                android:layout_height="match_parent"
+                android:text="状态"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#ffbb00"
+                />
+
+            <TextView
+                android:id="@+id/seat_fee"
+                android:layout_width="@dimen/x80"
+                android:layout_height="match_parent"
+                android:text="餐位费"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#ffbb00"
+                />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="@dimen/x70"
+                android:layout_height="match_parent"
+                android:text="金额"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                />
+             <!--<RelativeLayout-->
+                 <!--android:layout_width="@dimen/x140"-->
+                 <!--android:layout_height="match_parent">-->
+
+                 <!--<Button-->
+                     <!--android:id="@+id/printer"-->
+                     <!--android:layout_width="wrap_content"-->
+                     <!--android:layout_height="wrap_content"-->
+                     <!--android:layout_marginLeft="@dimen/x20"-->
+                     <!--android:text="打印小票"-->
+                     <!--/>-->
+
+                  <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                     <!--&lt;!&ndash;android:id="@+id/orderDo"&ndash;&gt;-->
+                     <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                     <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                     <!--&lt;!&ndash;android:layout_toRightOf="@id/printer"&ndash;&gt;-->
+                     <!--&lt;!&ndash;android:layout_marginLeft="@dimen/x5"&ndash;&gt;-->
+                     <!--&lt;!&ndash;android:layout_centerVertical="true"&ndash;&gt;-->
+                     <!--&lt;!&ndash;android:background="@mipmap/do_icon"&ndash;&gt;-->
+                     <!--&lt;!&ndash;/>&ndash;&gt;-->
+             <!--</RelativeLayout>-->
+
+        </LinearLayout>
+</LinearLayout>

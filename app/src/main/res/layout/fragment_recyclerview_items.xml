@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--卡片试布局-->
+<android.support.v7.widget.CardView
+android:id="@+id/cardview"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+app:cardCornerRadius="5dp"
+android:layout_margin="10dp"
+android:layout_width="150dp"
+android:layout_height="100dp">
+
+<RelativeLayout
+    android:layout_width="150dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <TextView
+        android:id="@+id/tableName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1号台"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f7793b"
+        android:textSize="24sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tableName"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/tableName"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/can_img"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/yuanjiao_hong"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tableUse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="就餐种"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

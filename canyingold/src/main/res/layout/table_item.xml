@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/table_item_box"
+    >
+    <LinearLayout
+        android:layout_margin="@dimen/x5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table_item_box_zhuti"
+        android:background="@drawable/table_item_bg"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/x15"
+            android:paddingTop="@dimen/x15"
+            >
+
+            <TextView
+                android:id="@+id/tablename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="柳州4号"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/maxseat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="@dimen/x20"
+                android:layout_weight="1"
+                android:text="12座"
+                android:textSize="@dimen/x20" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/x15"
+            android:paddingBottom="@dimen/x15"
+            >
+
+            <TextView
+                android:id="@+id/table_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="12:30"
+                android:textSize="@dimen/x18" />
+
+            <TextView
+                android:id="@+id/using"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:text="空闲中"
+                android:gravity="right"
+                android:paddingRight="@dimen/x20"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/yuyue_icon_1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20"
+        android:visibility="gone"
+        android:background="@mipmap/yuyue_icon"
+        />
+    <ImageView
+        android:id="@+id/yuyue_icon_2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20"
+        android:visibility="gone"
+        android:background="@mipmap/yuyue_icon2"
+        />
+</RelativeLayout>

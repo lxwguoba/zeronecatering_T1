@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6777ce</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="transparent">#000000</color>
+    <color name="mian_color_bg_selected">#1D85E3</color>
+    <color name="color_bg_selected">#e0301e</color>
+    <color name="color_bg_normal">#EEEEEE</color>
+    <color name="color_text_selected">#ffffff</color>
+    <color name="color_text_normal">#000000</color>
+</resources>

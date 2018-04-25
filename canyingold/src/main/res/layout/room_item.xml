@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/roombg"
+android:orientation="vertical"
+    >
+<LinearLayout
+    android:id="@+id/layout_bg"
+    android:layout_width="202dp"
+    android:layout_height="55dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/roomname"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="大厅"
+        android:textSize="20sp"
+        android:textColor="@drawable/gridview_text_bg"
+        android:gravity="center"
+        />
+    <ImageView
+        android:id="@+id/selectedImg"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#f8b02a"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        />
+</LinearLayout>
+</LinearLayout>

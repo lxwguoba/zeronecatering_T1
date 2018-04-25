@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--卡片试布局-->
+<android.support.v7.widget.CardView
+    android:id="@+id/cardview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/x5"
+    android:layout_height="@dimen/y100"
+    android:layout_margin="@dimen/x10"
+    android:layout_width="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/y100"
+        android:padding="@dimen/x10"
+        android:layout_gravity="center_horizontal"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fd_img"
+            android:layout_width="@dimen/x76"
+            android:layout_height="@dimen/y76"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_11_logo"
+         />
+        <TextView
+            android:id="@+id/fd_name"
+            android:layout_width="@dimen/x260"
+            android:layout_height="wrap_content"
+            android:text="坂田分店（ID号：11046）"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="#f00"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_toRightOf="@id/fd_img"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

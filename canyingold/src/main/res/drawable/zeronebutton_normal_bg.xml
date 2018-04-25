@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+    <!--<corners android:radius="3dp" />-->
+    <!--<stroke android:color="#fff" android:width="1dp"/>-->
+    <!--<solid android:color="#fff"/>-->
+    <corners android:radius="6dp" />
+    <solid android:color="#0eb468" />
+</shape>
+
+
+
+    <!-- Style for "12" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+<!--<item android:width="220dp" android:height="52dp">-->
+<!--<shape android:shape="rectangle">-->
+    <!--<corners android:radius="6dp" />-->
+    <!--<solid android:color="#ee6656" />-->
+<!--</shape>-->
+<!--</item>-->

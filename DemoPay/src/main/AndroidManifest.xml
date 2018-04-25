@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sunmi.l3demo"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="24" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitleBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ConsumeActivity" />
+        <activity android:name=".PreAuthActivity" />
+        <activity android:name=".ReturnGoodsActivity" />
+        <activity android:name=".RevokeActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".CustomConsumeActivity" />
+        <!--接收结果广播-->
+        <receiver android:name=".ResultReceiver">
+            <intent-filter>
+                <action android:name="sunmi.payment.L3.RESULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="mian_radiobutton">
+        <!--<item name="android:layout_width">120dp</item>-->
+        <!--<item name="android:layout_marginLeft">20dp</item>-->
+        <!--<item name="android:layout_marginRight">20dp</item>-->
+        <!--<item name="android:layout_marginTop">40dp</item>-->
+        <item name="android:background">@drawable/mian_radio_group_selector</item>
+        <item name="android:textColor">@drawable/mian_color_radiobutton</item>
+        <!--<item name="android:layout_marginBottom">40dp</item>-->
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+        <!--<item name="android:layout_height">20dp</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+</resources>

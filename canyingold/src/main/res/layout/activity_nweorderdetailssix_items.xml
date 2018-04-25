@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y70">
+
+        <TextView
+            android:id="@+id/foodId"
+            android:layout_width="@dimen/x142"
+            android:layout_height="wrap_content"
+            android:text="菜品ID"
+             android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#5b5b5b"
+            />
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="@dimen/x150"
+            android:layout_height="wrap_content"
+            android:text="菜品名称"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#5b5b5b"
+            />
+
+        <TextView
+            android:id="@+id/foodCount"
+            android:layout_width="@dimen/x140"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#5b5b5b"
+            />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="@dimen/x150"
+            android:layout_height="wrap_content"
+            android:text="单价"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#5b5b5b"
+            />
+
+        <TextView
+            android:id="@+id/foodOkPrice"
+            android:layout_width="@dimen/x140"
+            android:layout_height="wrap_content"
+            android:text="成交价格"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#5b5b5b"
+            />
+
+        <TextView
+            android:id="@+id/foodYongJin"
+            android:layout_width="@dimen/x152"
+            android:layout_height="wrap_content"
+            android:text="佣金"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="#5b5b5b"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            >
+            <Button
+                android:id="@+id/foodUpData"
+                android:layout_width="@dimen/x26"
+                android:layout_height="@dimen/y26"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x42"
+                android:background="@mipmap/ddxq_revise"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/optionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x50"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品规格："
+            android:textSize="20sp"
+            android:textColor="#5b5b5b"
+            />
+
+        <TextView
+            android:id="@+id/optionsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#5b5b5b"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

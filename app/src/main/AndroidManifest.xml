@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zerone.catering">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <uses-permission android:name="android.hardware.usb.UsbAccessory" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_logos"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_logos"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--测试页面-->
+        <!--<activity android:name=".test.ThreadGetData">-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN" />-->
+
+        <!--<category android:name="android.intent.category.LAUNCHER" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <!--登录页面的启动-->
+        <activity android:name="com.zerone.catering.activitys.login.LoginOrderActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zerone.catering.activitys.branch.BranchActivity"
+            android:parentActivityName="activitys.FunctionActivity"
+            />
+        <!--android:launchMode="singleTask"-->
+        <activity android:name="com.zerone.catering.activitys.main.OrderMainActivity" />
+        <activity android:name="com.zerone.catering.activitys.main.HuiYuanInfo" />
+        <activity android:name="com.zerone.catering.activitys.main.HuiYuan_Test" />
+        <activity android:name="com.zerone.catering.activitys.order.OrderControl" />
+        <activity android:name="com.zerone.catering.activitys.order.NewOrderDetails" />
+        <activity android:name="com.zerone.catering.activitys.order.NewOrderDetailsOther" />
+        <activity android:name="com.zerone.catering.activitys.order.NewOrderDetailsYFK" />
+        <activity android:name="com.zerone.catering.activitys.table.TableCtrlActivity" />
+        <activity
+            android:name="com.zerone.catering.activitys.table.AddyyActivity"
+            android:theme="@style/dialog" />
+        <activity android:name="com.zerone.catering.activitys.branch.UpdateActivity" />
+        <activity
+            android:name="com.zerone.catering.dialog.Activity_Dialog"
+            android:theme="@style/dialog" />
+        <activity
+            android:name="com.zerone.catering.dialog.Activity_Dialog_YuYue"
+            android:theme="@style/dialog" />
+        <activity android:name="com.zerone.catering.dialog.LoginProgressBar" />
+        <activity android:name=".activitys.pay.OrderPay">
+
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+
+
+        </activity>
+        <activity
+            android:name=".activitys.main.VIPActvity"
+            android:theme="@style/dialog" />
+
+        <activity
+            android:name=".dialog.option_dialog.OptionsActivity"
+            android:theme="@style/dialog" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="design_width"
+            android:value="1366"></meta-data>
+        <meta-data
+            android:name="design_height"
+            android:value="768"></meta-data>
+    </application>
+</manifest>
